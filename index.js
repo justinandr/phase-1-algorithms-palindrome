@@ -4,7 +4,6 @@ function isPalindrome(word) {
     wordArray.unshift(e)
   }
   let newWord = wordArray.join('')
-  console.log(newWord)
 
   if (word === newWord){
     return true
