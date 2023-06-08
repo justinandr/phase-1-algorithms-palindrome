@@ -1,13 +1,29 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let wordArray = []
+  for (e of word){
+    wordArray.unshift(e)
+  }
+  let newWord = wordArray.join('')
+  console.log(newWord)
+
+  if (word === newWord){
+    return true
+  }
+  else {
+    return false
+  }
 }
 
 /* 
-  Add your pseudocode here
+  - call isPalindrome passing a string 
+  - declare a new, empty string
+  - iterate over the passed-in string backwards assigning each element to the new string as you go
+  - compare and return the appropriate boolean value
 */
 
 /*
-  Add written explanation of your solution here
+  My approach is to create a new string using the one provided in the arguement of the isPalindrome 
+  function and compare the two
 */
 
 // You can run `node index.js` to view these console logs
